@@ -1,0 +1,414 @@
+/*color and style*/
+:root {
+  --woocommerce: #a46497;
+  --wc-green: #7ad03a;
+  --wc-red: #a00;
+  --wc-orange: #ffba00;
+  --wc-blue: #2ea2cc;
+  --wc-primary: #a46497;
+  --wc-primary-text: white;
+  --wc-secondary: #ebe9eb;
+  --wc-secondary-text: #515151;
+  --wc-highlight: #77a464;
+  --wc-highligh-text: white;
+  --wc-content-bg: #fff;
+  --wc-subtext: #767676;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+.main .secTitle {
+  text-align: center;
+  padding: 2rem;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+.main .secTitle .title {
+  position: relative;
+  width: 100%;
+}
+.main .secTitle .smallText {
+  position: relative;
+  width: 100%;
+  font-size: 13px;
+  color: #767676;
+}
+.main .secContent {
+  gap: 1.5rem;
+  width: 100%;
+  height: 98rem;
+}
+.main .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+.main .secContent .imageDiv {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.main .secContent img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .secContent .cardInfo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  z-index: 2;
+}
+.main .secContent .cardInfo .desTitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.main .secTripsContent {
+  gap: 1.5rem;
+  width: 100%;
+  height: 98rem;
+}
+.main .secTripsContent .singleDestinationTrip {
+  height: 100%;
+  display: grid;
+  background: rgb(255, 255, 255);
+  row-gap: 10px;
+  border: 1px solid rgba(51, 34, 51, 0.2);
+  grid-template-rows: 68% 32%;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden;
+}
+.main .secTripsContent .imageDiv {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  cursor: pointer;
+  bottom: 0;
+  z-index: 1;
+}
+.main .secTripsContent img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .secTripsContent .priceTour {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: -moz-max-content;
+  width: max-content;
+  box-sizing: border-box;
+  padding: 3px 10px 2px 10px;
+  margin-bottom: 1rem;
+  background: #ff4a52;
+  z-index: 2;
+}
+.main .secTripsContent .priceTour .price {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+.main .secTripsContent .inforTour {
+  width: 100%;
+  padding: 1rem;
+}
+.main .secTripsContent .inforTour .desTitle {
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+.main .secTripsContent .inforTour .desc {
+  cursor: pointer;
+}
+.main .secTripsContent .inforTour .desc .desTour {
+  font-weight: 400;
+  font-size: 13px;
+  padding-bottom: 1rem;
+}
+.main .secTripsContent .inforTour .reviews {
+  cursor: pointer;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.main .secTripsContent .inforTour .reviews .starReview {
+  padding-right: 5px;
+}
+.main .secTripsContent .inforTour .reviews .totalRivew {
+  font-weight: 600;
+  font-size: 11px;
+}
+.main .secTripsContent .inforTour .reviews .icon {
+  font-size: 1rem;
+}
+.main .secTripsContent .inforTour .reviews .times {
+  font-weight: 600;
+  font-size: 11px;
+}
+.main .secTripsContent .singleChooseUs {
+  height: 100%;
+  display: grid;
+  background: rgb(255, 255, 255);
+  row-gap: 10px;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+.main .secTripsContent .imageWCU {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.main .secTripsContent .imgChooseUs {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+.main .secTripsContent .inforChooseUs {
+  text-align: center;
+}
+.main .secTripsContent .inforChooseUs .desTitleChooseUs {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+.main .secTripsContent .inforChooseUs .desChooseUs {
+  padding-top: 0.7em;
+  padding-bottom: 1.3em;
+  font-size: 15px;
+}
+.main .seconHero {
+  height: 60vh;
+  background-image: none;
+  z-index: 0;
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.main .seconHero .imgSecondHero {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+}
+.main .secTipsContent {
+  gap: 1.5rem;
+  width: 100%;
+  height: 115rem;
+}
+.main .secTipsContent .singleDestinationTips {
+  height: 100%;
+  display: grid;
+  background: rgb(255, 255, 255);
+  row-gap: 10px;
+  border: 1px solid rgba(51, 34, 51, 0.2);
+  grid-template-rows: 65% 35%;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden;
+}
+.main .secTipsContent .singleDestinationTips .imageDivTips {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.main .secTipsContent .singleDestinationTips img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .secTipsContent .singleDestinationTips .post_info_date {
+  text-align: start;
+  padding: 0;
+  border: 0;
+  font-weight: 500;
+  font-style: inherit;
+  font-size: 12px;
+  font-family: inherit;
+  vertical-align: baseline;
+  padding-bottom: 0.5rem;
+}
+.main .secTipsContent .singleDestinationTips .post_info_date .date_time {
+  cursor: pointer;
+}
+.main .secTipsContent .singleDestinationTips .cardInfoTips {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  z-index: 2;
+}
+.main .secTipsContent .singleDestinationTips .cardInfoTips .desTitleTips {
+  color: #1a0c0c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4em;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+.main .secTipsContent .singleDestinationTips .cardInfoTips .descTips {
+  color: #1a0c0c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+.main .secTipsContent .singleDestinationTips .cardInfoTips .post_button_wrapper {
+  color: rgba(34, 34, 34, 0.4274509804);
+  cursor: pointer;
+}
+.main .secTipsContent .singleDestinationTips .cardInfoTips .post_button_wrapper .readmore {
+  color: rgba(34, 34, 34, 0.4274509804);
+}
+.main .secTipsContent .singleDestinationTips .cardInfoTips .post_button_wrapper:hover {
+  color: #222222;
+}
+
+@media screen and (min-width: 769px) {
+  .main {
+    width: 100%;
+    position: relative;
+    padding-top: 12rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .main .title {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .main .secContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  .main .secContent .singleDestination {
+    width: 100%;
+    min-height: 300px;
+  }
+  .main .secTripsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1.6rem;
+    padding-bottom: 2rem;
+  }
+  .main .secTripsContent .singleDestinationTrip {
+    width: 100%;
+    min-height: 350px;
+  }
+  .main .secTripsContent .singleDestinationTrip .inforTour {
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+  .main .secTripsContent .singleChooseUs {
+    width: 100%;
+  }
+  .main .secTripsContent .singleChooseUs .imageWCU {
+    width: 100%;
+    min-height: 130px;
+  }
+  .main .secTipsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1.6rem;
+    padding-bottom: 2rem;
+  }
+  .main .secTipsContent .singleDestinationTips {
+    width: 100%;
+    grid-template-rows: 55% 45%;
+    min-height: 530px;
+  }
+  .main .secTipsContent .singleDestinationTips .cardInfoTips {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .main .secTipsContent .singleDestinationTips .descTips {
+    width: 100%;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=main.css.map */

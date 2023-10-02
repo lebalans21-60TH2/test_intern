@@ -1,0 +1,355 @@
+/*color and style*/
+:root {
+  --woocommerce: #a46497;
+  --wc-green: #7ad03a;
+  --wc-red: #a00;
+  --wc-orange: #ffba00;
+  --wc-blue: #2ea2cc;
+  --wc-primary: #a46497;
+  --wc-primary-text: white;
+  --wc-secondary: #ebe9eb;
+  --wc-secondary-text: #515151;
+  --wc-highlight: #77a464;
+  --wc-highligh-text: white;
+  --wc-content-bg: #fff;
+  --wc-subtext: #767676;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+
+  .logoo {
+    width: 92px;
+    aspect-ratio: auto 92 / 22;
+    height: 22px;
+  }
+  .togleNavbar{
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+   
+    .navBar {
+      position: absolute;
+      background-color: var(--wc-content-bg);
+      height: max-content;
+      width: 80%;
+      border-radius: 1rem;
+      top: -400rem;
+      left: 50%;
+      padding: 1rem;
+      transform: translate(-50%);
+      z-index: 2000;
+      box-shadow: 0 2px 4px rgba(2, 15, 29, 0.189);
+      transition: 0.3s ease-in-out;
+     
+      .navList {
+       
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+
+        .navItem {
+          padding: 0.5rem 0;
+
+          .navLink {
+            color: var(--wc-secondary-text);
+            font-size: 0.9rem;
+            font-weight: 600;
+            &:hover {
+              color: var(--wc-blue);
+            }
+          }
+        }
+      }
+      .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: firebrick;
+        &:hover {
+          color: var(--wc-blue);
+        }
+      }
+    }
+    .activeNavbar {
+      top: 7rem;
+    }
+  }
+  .togleNavbar {
+   
+    .icon {
+      font-size: 25px;
+    }
+    &hover.icon {
+      color: var(--wc-blue);
+    }
+  }
+}
+
+.home {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+  .homeContent {
+    width: 100%;
+    height: max-content;
+    padding: 8rem 1.5rem 3rem;
+    display: flex;
+    row-gap: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    color: #ebe9eb;
+    z-index: 100;
+
+    .textDiv {
+      padding: 2rem 0;
+      text-align: center;
+      .homeTitle {
+        position: relative;
+        font-size: 24px !important;
+        text-align: center;
+        top: -3rem;
+      }
+      .smallText {
+        position: relative;
+        font-size: 15px;
+        font-weight: 500;
+        top: -3rem;
+      }
+    }
+    .searchContainer {
+      position: relative;
+      top: -8rem;
+      padding: 2rem 1rem;
+      gap: 1rem;
+    }
+
+    .input {
+      height: 40px;
+      padding: 0 1rem;
+      background: var(--wc-content-bg);
+      border-radius: 5px;
+
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+      select {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+    }
+
+    .icon {
+      font-size: 18px;
+      color: #767676;
+    }
+    .inputSearch{
+      height: 40px;
+      border-radius: 5px;
+      background: rgba(255, 73, 27, 0.882);
+
+      &:hover{
+        background: var(--wc-blue);
+      }
+    }
+  .btnSearch{
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      color: #ebe9eb;
+      background: none;
+      cursor: pointer;
+
+    }
+   
+    .searchOptions {
+      width: max-content;
+      align-items:center;
+      justify-content: center;
+      .icon{
+        font-size: 15px;
+        font-weight: 500;
+        color:#ebe9eb ;
+      }
+      span{
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+    .searchOptions_media{
+      position: relative;
+      top: -8rem;
+      left: -40%;
+      width: max-content;
+      align-items:center;
+      justify-content: center;
+      display: flex;
+      .icon{
+        font-size: 15px;
+        font-weight: 500;
+        color:#ebe9eb ;
+      }
+      span{
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+    // 49 phut 33  
+  }
+}
+
+// media
+@media screen and (min-width: 769px) {
+  .closeNavbar{
+    display: none;
+  }
+  .togleNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .header.active{
+    background: rgb(25, 25, 30);
+  
+    
+  }
+  .header{
+    padding: 1.5rem 2rem;
+    .logoDiv{
+      flex: 2;
+    }
+    .navItem {
+    color: #0f0e0e;
+
+      
+    }
+    .navBar{
+      .navList{
+      flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      
+        .navItem{
+          padding: 0 0.5rem 0.5rem ;
+          .navLink{
+            color: #fff;
+            padding: 0 0.45rem;
+            font-size: 0.9rem;
+            &:hover{
+              cursor: pointer;
+              // 1h48
+            }
+          }
+        }
+      }
+    }
+  }
+  .home{
+    .overlay{
+      width: 100%;
+      height: 45rem;
+    }
+    .homeContent{
+      width: 100%;
+      height: max-content;
+      padding: 15rem 1.5rem 3rem;
+      display: flex;
+      row-gap: 6rem;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      margin: auto;
+      color: #ebe9eb;
+      z-index: 100;
+
+      .destinationInput{
+        flex: 1;
+      }
+      .monthInput{
+        flex: 1;
+      }
+      .sortByDateInput{
+        flex: 1;
+      }
+      .destinationInput{
+        flex: 1;
+      }
+      .textDiv{
+        padding: 0.7rem 0 0 0;
+        text-align: center;
+        .homeTitle{
+          font-size: 35px !important;
+          text-transform: none;
+          letter-spacing: 0px;
+        }
+      }
+    }
+    .cardDiv{
+      display: flex;
+      flex-direction: column;
+    }
+    .searchContainer{
+      display: flex;
+    width: 90%;
+    
+      padding: 1rem 1rem !important;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      
+
+      .advancedSearch{
+        display: none;
+      }
+    }
+  
+  }
+}
